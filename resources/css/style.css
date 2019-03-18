@@ -70,13 +70,12 @@ li {
 
 .hero_banner {
   display: flex;
-  width: 100%;
   padding: 2rem 1.5rem;
   background-color: #D3D3D3;
 }
 
 .hero_banner img {
-  width: 60%;
+  width: 57%;
   height: 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -85,6 +84,7 @@ li {
 .learn {
   display: flex;
   flex-direction: column;
+  width: 35%;
   margin: 2rem 1.5rem;
 }
 
@@ -93,12 +93,16 @@ li {
   margin: .5rem 0;
 }
 
+.learn p {
+  padding: 0rem 0rem;
+}
+
 .start_button {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 2rem;
-  margin: .5rem 0;
+  margin: 1.5rem 0;
   padding: 0.5rem 0;
   background-color: #696969;
 }
@@ -116,7 +120,8 @@ li {
 
 .profile {
   width: 60%;
-  margin: 2rem 1.5rem;
+  padding: 2rem 1.5rem;
+  border-right: 1px solid #D3D3D3;
 }
 
 .profile img {
@@ -128,14 +133,20 @@ li {
   font-family: "Oswald", Arial, sans-serif;
 }
 
+#emanuel {
+  padding: 0 0;
+  margin-bottom: 1rem;
+}
+
 .info {
   width: 40%;
-  margin: 2rem 0.5rem 2rem 0;
+  margin: 1rem 0;
 }
 
 .dates, .campus, .guest {
   display: flex;
   width: 100%;
+  border-bottom: 1px solid #D3D3D3;
 }
 
 .campus img {
@@ -159,9 +170,13 @@ li {
 .details {
   display: flex;
   flex-direction: column;
-  line-height: 1.75rem;
+  justify-content: center;
+  line-height: 1rem;
   font-size: 0.9rem;
-  margin: 1rem 0;
+}
+
+.details span, h3 {
+  margin: 0.5rem 0
 }
 
 .guest {
@@ -172,7 +187,6 @@ li {
 
 .learning {
   background-color: #D3D3D3;
-  width: 100%;
   padding: 1rem;
 }
 
@@ -206,6 +220,10 @@ li {
   margin: 1rem 1rem 1.5rem 1rem;
 }
 
+.class_info p {
+  padding: 0 0;
+}
+
 /* Thesis section */
 
 #thesis {
@@ -237,43 +255,36 @@ li {
   display: flex;
   width: 40%;
   flex-direction: column;
+  padding-top: 1rem;
 }
 
-.exhibit {
+.exhibitA, .exhibitB {
   display: flex;
-  margin: 0rem 0;
+  align-items: center;
 }
 
-.exhibit img {
+.exhibitA {
+  background-color: #D3D3D3;
+}
+
+.exhibitA img {
   width: 35%;
-  height: 55%;
+  height: 70%;
+  margin: 1rem;
+}
+
+.exhibitB img {
+  width: 35%;
+  height: 70%;
   margin: 1rem;
 }
 
 .exhibit_info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 65%;
-  line-height: 0.9rem;
-  font-size: 0.9rem;
 }
-
-.exhibit_info h3, span {
-  margin: 1rem 0;
-  padding: 0 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Footer section */
@@ -281,17 +292,20 @@ li {
 .footer {
   display: flex;
   width: 100%;
-  margin: 1rem 2rem;
   font-size: 0.75rem;
+  margin: 2rem 0;
+  border-top: 1px #D3D3D3 solid;
 }
 
 .copyright {
   width: 100%;
+  margin: 1rem 2rem;
 }
 
 .terms {
   display: flex;
   align-items: flex-end;
+  margin: 1rem 2rem;
 }
 
 .terms span {
