@@ -27,7 +27,7 @@ h1, h2, h3 {
 
 .header img {
   height: 4rem;
-  width: 4rem;
+  width: 3.5rem;
 }
 
 .header span {
@@ -66,6 +66,31 @@ li {
   color: #000000;
 }
 
+.nav_mobile {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav_mobile a {
+  height: 4rem;
+  width: 4rem;
+}
+
+@media only screen and (min-width: 721px) {
+  .nav_mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:720px) {
+  .nav ul {
+    display: none
+  }
+  #icon1, #name1, #name2 {
+    display: none;
+  }
+}
+
 /* Information section */
 
 .hero_banner {
@@ -101,7 +126,8 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 2rem;
+  height: 3rem;
+  font-size: 1.5rem;
   margin: 1.5rem 0;
   padding: 0.5rem 0;
   background-color: #696969;
@@ -109,6 +135,28 @@ li {
 
 .start_button span {
   color: white;
+}
+
+@media only screen and (max-width:720px) {
+  .hero_banner {
+    flex-direction: column;
+    padding: 0 0;
+  }
+  .hero_banner img {
+    width: 100%;
+  }
+  .learn {
+    margin: 2rem 1rem;
+    width: auto;
+  }
+  #emanuel {
+    margin-top: 1.5rem;
+  }
+  .start_button {
+    margin-top: 1.5rem;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
 }
 
 /* Start learning section */
@@ -179,8 +227,62 @@ li {
   margin: 0.5rem 0
 }
 
+.details h3 {
+  font-size: 1.3rem;
+}
+
 .guest {
   background-color: #D3D3D3;
+}
+
+@media only screen and (min-width: 721px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:720px) {
+  .profile {
+    display: none;
+  }
+  .desktop {
+    display: none;
+  }
+  .info {
+    margin: 0 0;
+    padding: 2rem 1rem;
+    width: 100%;
+  }
+  .details {
+    margin: 0 2rem;
+    padding:  2rem 1rem;
+    line-height: 1.5rem;
+}
+.details h3 {
+  font-size: 2rem;
+}
+.details span {
+  font-size: 1.5em;
+}
+  .guest {
+    background-color: #ffffff;
+  }
+  .dates, .campus, .guest {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0px solid #ffffff;
+  }
+  .dates img {
+    width: auto;
+    margin: auto;
+}
+  .campus img {
+      width: auto;
+      margin: auto;
+}
+  .guest img {
+      width: auto;
+      margin: auto;
 }
 
 /* Thesis exhibit section */
@@ -222,6 +324,37 @@ li {
 
 .class_info p {
   padding: 0 0;
+}
+
+@media only screen and (max-width:720px) {
+  .learning {
+    background-color: #ffffff;
+    border-bottom: 1px solid #D3D3D3;
+  }
+  .learning h1 {
+    font-size: 3rem;
+  }
+  .course_row1 {
+    flex-direction: column;
+    margin: 1rem 1rem 0rem 1rem;
+  }
+  .course_row2 {
+    flex-direction: column;
+    margin: 0rem 1rem 2rem 1rem;
+  }
+  .class {
+    background-color: #D3D3D3;
+    padding: 0rem 1rem;
+    margin: 0.25rem 0;
+    width: auto;
+    font-size: 1.25rem;
+  }
+  .class img, span, p{
+    display: none;
+  }
+  .class_info h3 {
+    margin: 1.5rem 0;
+  }
 }
 
 /* Thesis section */
@@ -286,6 +419,24 @@ li {
   width: 65%;
 }
 
+@media only screen and (max-width:720px) {
+  #thesis {
+    margin: 2rem auto 1rem auto;
+    font-size: 3rem;
+  }
+  .video {
+    width: auto;
+  }
+  .video h3 {
+    display: none;
+  }
+  #video_description {
+    display: none;
+  }
+  .thesis_info {
+    display: none;
+  }
+}
 
 /* Footer section */
 
