@@ -119,6 +119,10 @@ li {
   background-color: #696969;
 }
 
+.start_button:hover {
+  background: #000000;
+}
+
 .start_button span {
   color: white;
 }
@@ -332,6 +336,10 @@ li {
   .class {
     width: auto;
     margin: 0.25rem 0;
+  }
+  .class_info:hover {
+    background-color: #696969;
+    color: #ffffff;
   }
   .class_info {
     background-color: #D3D3D3;
