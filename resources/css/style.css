@@ -208,6 +208,56 @@ li {
   background-color: #D3D3D3;
 }
 
+#walking_students, #map_pic, #old_guy {
+  display: none;
+}
+
+@media only screen and (max-width: 720px) {
+  .profile {
+    display: none;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .dates, .campus, .guest {
+    flex-direction: column;
+    padding: 1rem 1rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+  }
+  .dates img {
+    display: none;
+    height: auto;
+    margin: 0 0;
+  }
+  .campus img {
+    display: none;
+    height: auto;
+    margin: 0 0;
+  }
+  .guest img {
+    display: none;
+    height: auto;
+    margin: 0 0;
+  }
+  #walking_students, #map_pic, #old_guy {
+    display: block;
+    width: 100%;
+  }
+  .details {
+    padding: 1rem 1rem;
+  }
+  .details h3 {
+    font-size: 2.5rem;
+  }
+  .details span {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+}
+
 /* Thesis exhibit section */
 
 .learning {
